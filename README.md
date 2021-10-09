@@ -6,3 +6,4 @@
 
 - [x] View
 - [x] Button
+- [x] Image
