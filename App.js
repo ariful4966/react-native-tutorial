@@ -7,9 +7,10 @@ const App = () => {
  
   return (
     <View style={styles.container}>
-     <View style={[styles.width, {backgroundColor: 'red',flex:1}]}></View>
-     <View style={[styles.width, {backgroundColor: 'blue',flex:1}]}></View>
-     <View style={[styles.width, {backgroundColor: 'real',flex:1}]}></View>
+     <View style={[styles.width, {backgroundColor: 'red', height: 700, width: 100}]}></View>
+     {/* <View style={[styles.width, {backgroundColor: 'blue', height: 35, width: 200}]}></View>
+     <View style={[styles.width, {backgroundColor: 'real', height: 50, width: 300}]}></View>
+     <View style={[styles.width, {backgroundColor: 'red', height: 50, width: 360}]}></View> */}
     </View>
   );
 };
@@ -18,11 +19,10 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    flex: 3,
-    color: '#fff',
   },
   width: {
-    // flex: 1,
+    width: 200
+    
   }
   
 });
