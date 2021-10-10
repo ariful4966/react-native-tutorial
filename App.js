@@ -1,17 +1,43 @@
 //import liraries
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
 // create a component
 const App = () => {
  
   return (
-    <View style={styles.container}>
-     <View style={[styles.width, {backgroundColor: 'red', height: 700, width: 100}]}></View>
-     {/* <View style={[styles.width, {backgroundColor: 'blue', height: 35, width: 200}]}></View>
-     <View style={[styles.width, {backgroundColor: 'real', height: 50, width: 300}]}></View>
-     <View style={[styles.width, {backgroundColor: 'red', height: 50, width: 360}]}></View> */}
-    </View>
+    <ScrollView horizontal={true} style={styles.container}>
+     <View style={[styles.width, {backgroundColor: 'red', height: 60, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'blue', height: 35, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'orange', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'green', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'black', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'red', height: 60, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'blue', height: 35, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'orange', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'green', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'black', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'red', height: 60, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'blue', height: 35, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'orange', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'green', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'black', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'red', height: 60, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'blue', height: 35, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'orange', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'green', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'black', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'red', height: 60, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'blue', height: 35, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'orange', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'green', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'black', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'red', height: 60, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'blue', height: 35, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'orange', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'green', height: 50, width: 100}]}></View>
+     <View style={[styles.width, {backgroundColor: 'black', height: 50, width: 100}]}></View>
+    </ScrollView>
   );
 };
 
