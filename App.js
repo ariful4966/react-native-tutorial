@@ -4,56 +4,67 @@ import { Alert, FlatList, Image, StyleSheet, Text, View } from 'react-native';
 
 const myData = [
   {
+    id:1,
     title: 'Bangladesh',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:2,
     title: 'India',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:3,
     title: 'Pakistan',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:4,
     title: 'America',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:5,
     title: 'Frech',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:6,
     title: 'Italy',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:7,
     title: 'Portugal',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:8,
     title: 'Canada',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:9,
     title: 'Oman',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:10,
     title: 'England',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
   },
   {
+    id:11,
     title: 'South Koria',
     subTitle: 'This is a country name, nation name',
     img: 'https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/18814/cold-dive-into-react-native-a-beginners-tutorial-922a625efe84a4c2d782343b333b0bdb.png',
@@ -102,7 +113,7 @@ const App = () => {
             subTitle={item.subTitle}
             img={item.img}></Childview>
         )}
-        keyExtractor={(_, idx) => idx}
+        keyExtractor={(item) => item.id}
       />
     </View>
   );
