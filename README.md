@@ -12,3 +12,4 @@
 - [x] Height, Width
 - [x] FlatList
 - [x] FlatList Horizontal
+- [x] FlatList GridView
