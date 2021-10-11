@@ -65,11 +65,18 @@ const Childview = ({title, subTitle, img}) => {
     Alert.alert(altTitle);
   };
   return (
-    <View style={{backgroundColor: 'purple', padding: 10, margin: 5, flex: 1, flexDirection: 'row'}}>
-      <View style={{flex: 0.3, marginRight:10}}> 
-        <Image source={{uri: img}} style={{height: 70, width: '100%'}} />
+    <View
+      style={{
+        backgroundColor: 'purple',
+        width: 200,
+        padding: 10,
+        margin: 5,
+        flexDirection: 'column',
+      }}>
+      <View style={{ marginRight: 10}}>
+        <Image source={{uri: img}} style={{height: 100, width: '100%'}} />
       </View>
-      <View style={{flex: 0.7}}>
+      <View >
         <Text
           onPress={() => handlePresss(title)}
           style={{color: 'black', fontSize: 18}}>
@@ -86,6 +93,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <FlatList
+        horizontal={true}
         data={myData}
         renderItem={({item}) => (
           <Childview
@@ -102,6 +110,7 @@ const App = () => {
 // define your styles
 const styles = StyleSheet.create({
   container: {
+    // height: 200
     // flex: 1,
     // justifyContent: 'center',
     // alignItems: 'center',

@@ -11,3 +11,4 @@
 
 - [x] Height, Width
 - [x] FlatList
+- [x] FlatList Horizontal
